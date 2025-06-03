@@ -30,8 +30,8 @@ Replace `gfortran` with your compiler of choice (for example `ifort`) if needed.
 
 ## Data files
 
-- `RO_stress4.dat` – parameters of the neural network used to predict stress.
-- `RO_Ct4.dat` – parameters of the neural network used to predict the tangent stiffness matrix.
+- `RO_stress.dat` – parameters of the neural network used to predict stress.
+- `RO_Ct.dat` – parameters of the neural network used to predict the tangent stiffness matrix.
 - `UnixialTensionNN.inp` – Abaqus input deck that exercises the UMAT in a uniaxial tension test.
 
 Both `.dat` files start with the input/output sizes and normalization ranges followed by the layer definitions (number of layers, weights, and biases). They are read automatically inside `ro_nn_umat.f90` when the UMAT is initialized.
